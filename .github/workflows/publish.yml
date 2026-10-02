@@ -3,6 +3,9 @@ name: Build and publish nucleotide reader API
 on:
    workflow_dispatch:
 
+permissions:
+  contents: read
+
 env:
   DOCKER_IMAGE: kc130/nucleotide-reader  # Replace with your Docker Hub image name
 
