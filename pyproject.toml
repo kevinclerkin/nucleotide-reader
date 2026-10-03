@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "nucleotide-reader"
 version = "0.1.0"
 description = "A Flask API"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     "Flask==3.1.0",
     "Flask-Cors==5.0.0",
@@ -16,3 +16,6 @@ dependencies = [
 dev = [
     "pylint==4.0.4",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
